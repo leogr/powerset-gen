@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "rules": {
+    "semi": "off",
+    "no-magic-numbers": "off",
+    "no-bitwise": "off"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "walmart/configurations/es6-node",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  }
+}
