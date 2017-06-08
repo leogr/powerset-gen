@@ -1,4 +1,4 @@
-export const generator = function *(set, map = (value) => value) {
+const generator = function *(set, map = (value) => value) {
 
   yield map([], 0) // the empty set
 
