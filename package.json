@@ -1,0 +1,51 @@
+{
+  "name": "powerset-gen",
+  "version": "0.0.0",
+  "description": "A generator function that produces all subsets of the given set in input",
+  "main": "dist/es5.umd.js",
+  "module": "dist/es6.esm.js",
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "pretest": "npm run lint && npm run build",
+    "test": "mocha",
+    "lint": "eslint *.js",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s",
+    "changelog:edit": "$(git var GIT_EDITOR) CHANGELOG.md",
+    "preversion": "npm run test",
+    "version": "npm run changelog && npm run changelog:edit && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm test"
+  },
+  "repository": "leogr/powerset-gen",
+  "git": {
+    "scripts": {
+      "commit-msg": "./node_modules/.bin/validate-commit-msg --preset eslint $1"
+    }
+  },
+  "keywords": [
+    "powerset", "generator"
+  ],
+  "author": "Leonardo Grasso <me@leonardograsso.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leogr/powerset-gen/issues"
+  },
+  "homepage": "https://github.com/leogr/powerset-gen",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "conventional-changelog-cli": "^1.2.0",
+    "eslint": "^3.12.2",
+    "eslint-config-walmart": "^1.1.1",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "git-scripts": "^0.2.1",
+    "mocha": "^3.0.0",
+    "rollup": "^0.42.0",
+    "rollup-plugin-buble": "^0.15.0",
+    "validate-commit": "^2.3.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
