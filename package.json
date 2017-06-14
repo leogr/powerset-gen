@@ -46,6 +46,8 @@
   },
   "files": [
     "dist",
+    "generator.js",
+    "generator.legacy.js",
     "README.md"
   ]
 }
