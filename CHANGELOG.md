@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/leogr/powerset-gen/compare/v0.1.0...v0.1.1) (2019-09-21)
+
+
+### Update
+
+* Dev dependencies ([71b68b7af1aa2ac4642587fc56f83a37800a7754](https://github.com/leogr/powerset-gen/commit/71b68b7af1aa2ac4642587fc56f83a37800a7754))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-06-14)
 

@@ -1,6 +1,6 @@
 {
   "name": "powerset-gen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A generator function that produces all subsets of the given set in input",
   "main": "dist/es5.umd.js",
   "module": "dist/es6.esm.js",
